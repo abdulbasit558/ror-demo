@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Outfit</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<header class="navbar navbar-default navbar-fixed-top">
+  		<div class="container">
+			<ul class="nav nav-tabs" id="logo">
+				<li role="presentation"><%= link_to "Outfit", "/", class: "btn btn-lg btn-success"%></li> 
+			  	<li role="presentation"><%= link_to "Articles", "/articles", class: "btn btn-lg btn-success" %></li>
+  			  	<li role="presentation"><%= link_to "New Article", "/articles/new", class: "btn btn-lg btn-success" %></li>
+  			  	<li role="presentation"><%= link_to "Post", "/posts", class: "btn btn-lg btn-success"%></li>
+			</ul>   
+  		</div>
+	</header>
+
+    <%= yield %>
+  </body>
+</html>

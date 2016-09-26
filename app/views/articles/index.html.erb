@@ -1,0 +1,28 @@
+<div class="container">
+<h1>Listing articles</h1>
+ 
+<div class="table-responsive">
+  <table class="table">
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th>Image</th>
+    <th>Action</th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= image_tag article.picture(:thumb) %></td>
+      <td class=""><%= link_to 'Show', article_path(article) %></td>
+      <td class=""><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td class=""><%= link_to 'Destroy', article_path(article),
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'New article', new_article_path, class: "btn btn-primary" %>
+</div>
+</div>

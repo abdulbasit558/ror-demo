@@ -1,0 +1,31 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+#logo {
+	margin: 10px 10px 10px 10px;
+}
+body {
+	padding-top: 80px;
+}
+.btn-regular {
+	background: #ed8844 !important;
+	color: #fff !important;
+	border: 1px solid #ed8844 !important;
+	border-radius: 4px !important;
+	background-image: none !important;
+	text-transform: uppercase !important;
+	font-size: 14px !important;
+	letter-spacing: 1px !important;
+	margin: 3px;
+	text-shadow: none !important;
+	line-height: auto !important;
+	vertical-align: middle !important;
+	text-decoration: none !important;
+}
+.btn { color: #fff;}
+.main {
+	text-center: center;
+	color: #fff;
+}
+.center-jumbotron .blog-btn { display: block; margin: 0 auto; text-align: center; width: 10%;} 
